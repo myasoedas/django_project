@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ZGpU2c0HB3jph7pfeuVWWntq91sk4EibpFXTFkLUfW6e925cU8LJ6yi4ZYE21tjE'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['89.108.79.58', '2a00:f940:2:4:2::4cdb', '89-108-79-58.cloudvps.regruhosting.ru']
 
