@@ -1,10 +1,8 @@
 from django.urls import path
-#from . import views
-from .views import members
-
+from . import views
+                
 urlpatterns = [
-    path('', members, name='hello-world'),
-    #path('members/', views.members, name='members'),
-    #path('', views.index, name='index'),
+    path('', views.members, name='members'),  # URL для главной страницы members
+    path('details/<int:id>/', views.details, name='details'),  # Подробности о члене
 ]
 
