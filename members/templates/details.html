@@ -1,17 +1,14 @@
 {% extends "master.html" %}
 
 {% block title %}
-  Дополнительная информация: {{ mymember.firstname }} {{ mymember.lastname }}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
 {% endblock %}
-
 
 {% block content %}
-  
-  <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
-  
-  <p>Телефон {{ mymember.phone }}</p>
-  <p>Дата вступления в семью {{ mymember.joined_date }}</p>
-  
-  <p>Обратно <a href="/members">Члены семьи</a></p>
-  
-{% endblock %}
+  <div class="mycard">
+    <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+    <p>Phone {{ mymember.phone }}</p>
+    <p>Member since: {{ mymember.joined_date }}</p>
+  </div>
+{% endblock %} 
+
